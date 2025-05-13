@@ -1,4 +1,4 @@
-\begin{thebibliography}{22}
+\begin{thebibliography}{27}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\href}[2]{#2}
@@ -16,18 +16,28 @@
   Marchetti(2022)}]{AkhoondzadehDevelopingFuzzyInference2022}
 \bibinfo{author}{Akhoondzadeh, M.}, \bibinfo{author}{Marchetti, D.},
   \bibinfo{year}{2022}.
-\newblock \bibinfo{title}{Developing a {{Fuzzy Inference System Based}} on
-  {{Multi-Sensor Data}} to {{Predict Powerful Earthquake Parameters}}}.
+\newblock \bibinfo{title}{Developing a fuzzy inference system based on
+  multi-sensor data to predict powerful earthquake parameters}.
 \newblock \bibinfo{journal}{REMOTE SENSING} \bibinfo{volume}{14},
   \bibinfo{pages}{3203}.
 \newblock \DOIprefix\doi{10.3390/rs14133203}.
+%Type = Article
+\bibitem[{Alimoradi et~al.(2024)Alimoradi, Rahimi and
+  De~Santis}]{alimoradiSuccessfulTestsDetecting2024}
+\bibinfo{author}{Alimoradi, H.}, \bibinfo{author}{Rahimi, H.},
+  \bibinfo{author}{De~Santis, A.}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Successful tests on detecting pre-earthquake magnetic
+  field signals from space}.
+\newblock \bibinfo{journal}{Remote Sensing} \bibinfo{volume}{16},
+  \bibinfo{pages}{2985}.
+\newblock \DOIprefix\doi{10.3390/rs16162985}.
 %Type = Article
 \bibitem[{Barman et~al.(2016)Barman, Ghose, Sinha and
   Deb}]{BarmanDetectionearthquakeinduced2016}
 \bibinfo{author}{Barman, C.}, \bibinfo{author}{Ghose, D.},
   \bibinfo{author}{Sinha, B.}, \bibinfo{author}{Deb, A.}, \bibinfo{year}{2016}.
 \newblock \bibinfo{title}{Detection of earthquake induced radon precursors by
-  {{Hilbert Huang Transform}}}.
+  hilbert huang transform}.
 \newblock \bibinfo{journal}{JOURNAL OF APPLIED GEOPHYSICS}
   \bibinfo{volume}{133}, \bibinfo{pages}{123--131}.
 \newblock \DOIprefix\doi{10.1016/j.jappgeo.2016.08.004}.
@@ -38,7 +48,7 @@
   L.}, \bibinfo{author}{Lian, S.}, \bibinfo{author}{Ye, Z.},
   \bibinfo{year}{2021}.
 \newblock \bibinfo{title}{Dynamic monitoring of an offshore jacket platform
-  based on {{RTK-GNSS}} measurement by {{CF-CEEMDAN}} method}.
+  based on rtk-gnss measurement by cf-ceemdan method}.
 \newblock \bibinfo{journal}{APPLIED OCEAN RESEARCH} \bibinfo{volume}{115},
   \bibinfo{pages}{102844}.
 \newblock \DOIprefix\doi{10.1016/j.apor.2021.102844}.
@@ -49,16 +59,38 @@
   \bibinfo{author}{{Pav{\'o}n-Carrasco}, F.J.}, \bibinfo{author}{Cianchini,
   G.}, \bibinfo{author}{Mandea, M.}, \bibinfo{year}{2017}.
 \newblock \bibinfo{title}{Potential earthquake precursory pattern from space:
-  {{The}} 2015 {{Nepal}} event as seen by magnetic {{Swarm}} satellites}.
+  The 2015 nepal event as seen by magnetic swarm satellites}.
 \newblock \bibinfo{journal}{Earth and Planetary Science Letters}
   \bibinfo{volume}{461}, \bibinfo{pages}{119--126}.
 \newblock \DOIprefix\doi{10.1016/j.epsl.2016.12.037}.
+%Type = Article
+\bibitem[{De~Santis et~al.(2019)De~Santis, Marchetti, {Pav{\'o}n-Carrasco},
+  Cianchini, Perrone, Abbattista, Alfonsi, Amoruso, Campuzano, Carbone,
+  Cesaroni, De~Franceschi, De~Santis, Di~Giovambattista, Ippolito, Piscini,
+  Sabbagh, Soldani, Santoro, Spogli and
+  Haagmans}]{desantisPrecursoryWorldwideSignatures2019}
+\bibinfo{author}{De~Santis, A.}, \bibinfo{author}{Marchetti, D.},
+  \bibinfo{author}{{Pav{\'o}n-Carrasco}, F.J.}, \bibinfo{author}{Cianchini,
+  G.}, \bibinfo{author}{Perrone, L.}, \bibinfo{author}{Abbattista, C.},
+  \bibinfo{author}{Alfonsi, L.}, \bibinfo{author}{Amoruso, L.},
+  \bibinfo{author}{Campuzano, S.A.}, \bibinfo{author}{Carbone, M.},
+  \bibinfo{author}{Cesaroni, C.}, \bibinfo{author}{De~Franceschi, G.},
+  \bibinfo{author}{De~Santis, A.}, \bibinfo{author}{Di~Giovambattista, R.},
+  \bibinfo{author}{Ippolito, A.}, \bibinfo{author}{Piscini, A.},
+  \bibinfo{author}{Sabbagh, D.}, \bibinfo{author}{Soldani, M.},
+  \bibinfo{author}{Santoro, F.}, \bibinfo{author}{Spogli, L.},
+  \bibinfo{author}{Haagmans, R.}, \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Precursory worldwide signatures of earthquake
+  occurrences on swarm satellite data}.
+\newblock \bibinfo{journal}{Scientific Reports} \bibinfo{volume}{9},
+  \bibinfo{pages}{20287}.
+\newblock \DOIprefix\doi{10.1038/s41598-019-56599-1}.
 %Type = Article
 \bibitem[{Dragomiretskiy and
   Zosso(2014)}]{dragomiretskiyVariationalModeDecomposition2014}
 \bibinfo{author}{Dragomiretskiy, K.}, \bibinfo{author}{Zosso, D.},
   \bibinfo{year}{2014}.
-\newblock \bibinfo{title}{Variational {{Mode Decomposition}}}.
+\newblock \bibinfo{title}{Variational mode decomposition}.
 \newblock \bibinfo{journal}{IEEE Transactions on Signal Processing}
   \bibinfo{volume}{62}, \bibinfo{pages}{531--544}.
 \newblock \DOIprefix\doi{10.1109/TSP.2013.2288675}.
@@ -71,9 +103,8 @@
   \bibinfo{author}{He, X.}, \bibinfo{author}{Wen, J.}, \bibinfo{author}{Wang,
   T.}, \bibinfo{author}{Zhang, Y.}, \bibinfo{author}{Cheng, Y.},
   \bibinfo{year}{2022}.
-\newblock \bibinfo{title}{Analysis of {{Swarm Satellite Magnetic Field Data}}
-  for the 2015 {{Mw}} 7.8 {{Nepal Earthquake Based}} on {{Nonnegative Tensor
-  Decomposition}}}.
+\newblock \bibinfo{title}{Analysis of swarm satellite magnetic field data for
+  the 2015 mw 7.8 nepal earthquake based on nonnegative tensor decomposition}.
 \newblock \bibinfo{journal}{IEEE Transactions on Geoscience and Remote Sensing}
   \bibinfo{volume}{60}, \bibinfo{pages}{1--19}.
 \newblock \DOIprefix\doi{10.1109/TGRS.2022.3195726}.
@@ -82,28 +113,47 @@
   Hulot}]{friis-christensenSwarmConstellationStudy2006}
 \bibinfo{author}{{Friis-Christensen}, E.}, \bibinfo{author}{L{\"u}hr, H.},
   \bibinfo{author}{Hulot, G.}, \bibinfo{year}{2006}.
-\newblock \bibinfo{title}{Swarm: {{A}} constellation to study the {{Earth}}'s
-  magnetic field}.
+\newblock \bibinfo{title}{Swarm: A constellation to study the earth's magnetic
+  field}.
 \newblock \bibinfo{journal}{Earth, Planets and Space} \bibinfo{volume}{58},
   \bibinfo{pages}{351--358}.
 \newblock \DOIprefix\doi{10.1186/BF03351933}.
+%Type = Article
+\bibitem[{Harrigan et~al.(2024)Harrigan, Bi, Huang, O'Neill, Zhai, Sun and
+  Zhang}]{harriganDetectionElectromagneticSeismic2024}
+\bibinfo{author}{Harrigan, S.}, \bibinfo{author}{Bi, Y.},
+  \bibinfo{author}{Huang, M.}, \bibinfo{author}{O'Neill, C.},
+  \bibinfo{author}{Zhai, W.}, \bibinfo{author}{Sun, J.},
+  \bibinfo{author}{Zhang, X.}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Detection of electromagnetic seismic precursors from
+  swarm data by enhanced martingale analytics}.
+\newblock \bibinfo{journal}{Sensors} \bibinfo{volume}{24},
+  \bibinfo{pages}{3654}.
+\newblock \DOIprefix\doi{10.3390/s24113654}.
 %Type = Misc
 \bibitem[{Kitahara et~al.(2023)Kitahara, Kakiuchi, Yang and
   Nagayama}]{kitaharaAdaptiveBayesianFilter2023}
 \bibinfo{author}{Kitahara, M.}, \bibinfo{author}{Kakiuchi, Y.},
   \bibinfo{author}{Yang, Y.}, \bibinfo{author}{Nagayama, T.},
   \bibinfo{year}{2023}.
-\newblock \bibinfo{title}{Adaptive {{Bayesian Filter}} with {{Data-Driven
-  Sparse State Space Model}} for {{Seismic Response Estimation}}}.
+\newblock \bibinfo{title}{Adaptive bayesian filter with data-driven sparse
+  state space model for seismic response estimation}.
 \newblock \DOIprefix\doi{10.2139/ssrn.4521593}.
+%Type = Article
+\bibitem[{Kuo et~al.()Kuo, Lee and Huba}]{kuoImprovedCouplingModel}
+\bibinfo{author}{Kuo, C.L.}, \bibinfo{author}{Lee, L.C.},
+  \bibinfo{author}{Huba, J.D.}, .
+\newblock \bibinfo{title}{An improved coupling model for the
+  lithosphere-atmosphere-ionosphere system}
+  \DOIprefix\doi{10.1002/2013JA019392}.
 %Type = Article
 \bibitem[{Li et~al.(2022)Li, Zhao, Hu, Botta, Ionescu and
   Chen}]{LiECODUnsupervisedOutlier2022}
 \bibinfo{author}{Li, Z.}, \bibinfo{author}{Zhao, Y.}, \bibinfo{author}{Hu, X.},
   \bibinfo{author}{Botta, N.}, \bibinfo{author}{Ionescu, C.},
   \bibinfo{author}{Chen, G.}, \bibinfo{year}{2022}.
-\newblock \bibinfo{title}{{{ECOD}}: {{Unsupervised Outlier Detection Using
-  Empirical Cumulative Distribution Functions}}}.
+\newblock \bibinfo{title}{Ecod: Unsupervised outlier detection using empirical
+  cumulative distribution functions}.
 \newblock \bibinfo{journal}{IEEE Transactions on Knowledge and Data
   Engineering} ,
   \bibinfo{pages}{1--1}\DOIprefix\doi{10.1109/TKDE.2022.3159580}.
@@ -123,9 +173,9 @@
   J.}, \bibinfo{author}{Zhang, D.}, \bibinfo{author}{Zhang, H.},
   \bibinfo{author}{Zhang, Y.}, \bibinfo{author}{Zeren, Z.},
   \bibinfo{year}{2022}.
-\newblock \bibinfo{title}{Worldwide {{Statistical Correlation}} of {{Eight
-  Years}} of {{Swarm Satellite Data}} with {{M5}}.5+ {{Earthquakes}}: {{New
-  Hints}} about the {{Preseismic Phenomena}} from {{Space}}}.
+\newblock \bibinfo{title}{Worldwide statistical correlation of eight years of
+  swarm satellite data with m5.5+ earthquakes: New hints about the preseismic
+  phenomena from space}.
 \newblock \bibinfo{journal}{Remote Sensing} \bibinfo{volume}{14},
   \bibinfo{pages}{2649}.
 \newblock \DOIprefix\doi{10.3390/rs14112649}.
@@ -140,8 +190,8 @@
   \bibinfo{author}{Castellana, L.}, \bibinfo{author}{Hayakawa, M.},
   \bibinfo{year}{2006}.
 \newblock \bibinfo{title}{Global diagnostics of the ionospheric perturbations
-  related to the seismic activity using the {{VLF}} radio signals collected on
-  the {{DEMETER}} satellite}.
+  related to the seismic activity using the vlf radio signals collected on the
+  demeter satellite}.
 \newblock \bibinfo{journal}{NATURAL HAZARDS AND EARTH SYSTEM SCIENCES}
   \bibinfo{volume}{6}, \bibinfo{pages}{745--753}.
 \newblock \DOIprefix\doi{10.5194/nhess-6-745-2006}.
@@ -171,11 +221,21 @@
 \bibitem[{Parrot(2012)}]{ParrotStatisticalanalysisautomatically2012}
 \bibinfo{author}{Parrot, M.}, \bibinfo{year}{2012}.
 \newblock \bibinfo{title}{Statistical analysis of automatically detected ion
-  density variations recorded by {{DEMETER}} and their relation to seismic
+  density variations recorded by demeter and their relation to seismic
   activity}.
 \newblock \bibinfo{journal}{ANNALS OF GEOPHYSICS} \bibinfo{volume}{55},
   \bibinfo{pages}{149--155}.
 \newblock \DOIprefix\doi{10.4401/ag-5270}.
+%Type = Article
+\bibitem[{Pulinets and
+  Ouzounov(2011)}]{pulinetsLithosphereAtmosphereIonosphere2011}
+\bibinfo{author}{Pulinets, S.}, \bibinfo{author}{Ouzounov, D.},
+  \bibinfo{year}{2011}.
+\newblock \bibinfo{title}{Lithosphere--atmosphere--ionosphere coupling (laic)
+  model -- an unified concept for earthquake precursors validation}.
+\newblock \bibinfo{journal}{Journal of Asian Earth Sciences}
+  \bibinfo{volume}{41}, \bibinfo{pages}{371--382}.
+\newblock \DOIprefix\doi{10.1016/j.jseaes.2010.03.005}.
 %Type = Article
 \bibitem[{Rasheed et~al.(2023)Rasheed, Osama, Nikolopoulos and
   Rafique}]{rasheedSingularSpectralControl2023}
@@ -193,8 +253,8 @@
 \bibinfo{author}{Sabaka, T.J.}, \bibinfo{author}{{T{\o}ffner-Clausen}, L.},
   \bibinfo{author}{Olsen, N.}, \bibinfo{author}{Finlay, C.C.},
   \bibinfo{year}{2018}.
-\newblock \bibinfo{title}{A comprehensive model of {{Earth}}'s magnetic field
-  determined from 4 years of {{Swarm}} satellite observations}.
+\newblock \bibinfo{title}{A comprehensive model of earth's magnetic field
+  determined from 4 years of swarm satellite observations}.
 \newblock \bibinfo{journal}{Earth, Planets and Space} \bibinfo{volume}{70},
   \bibinfo{pages}{130}.
 \newblock \DOIprefix\doi{10.1186/s40623-018-0896-3}.
@@ -213,8 +273,8 @@
 \bibitem[{Wanpeng and Zhenhong(2010)}]{wanpengNovelHybridPSO2010}
 \bibinfo{author}{Wanpeng, F.}, \bibinfo{author}{Zhenhong, L.I.},
   \bibinfo{year}{2010}.
-\newblock \bibinfo{title}{{A novel hybrid PSO/simplex algorithm for determining
-  earthquake source parameters using InSAR data}}.
+\newblock \bibinfo{title}{A novel hybrid pso/simplex algorithm for determining
+  earthquake source parameters using insar data}.
 \newblock \bibinfo{journal}{Progress in Geophysics} \bibinfo{volume}{25},
   \bibinfo{pages}{1189--1196}.
 \newblock \DOIprefix\doi{10.3969/j.issn.1004-2903.2010.04.007}.
@@ -224,8 +284,8 @@
 \bibinfo{author}{Xiong, P.}, \bibinfo{author}{Long, C.}, \bibinfo{author}{Zhou,
   H.}, \bibinfo{author}{Battiston, R.}, \bibinfo{author}{Zhang, X.},
   \bibinfo{author}{Shen, X.}, \bibinfo{year}{2020}.
-\newblock \bibinfo{title}{Identification of {{Electromagnetic Pre-Earthquake
-  Perturbations}} from the {{DEMETER Data}} by {{Machine Learning}}}.
+\newblock \bibinfo{title}{Identification of electromagnetic pre-earthquake
+  perturbations from the demeter data by machine learning}.
 \newblock \bibinfo{journal}{REMOTE SENSING} \bibinfo{volume}{12},
   \bibinfo{pages}{3643}.
 \newblock \DOIprefix\doi{10.3390/rs12213643}.
@@ -237,8 +297,8 @@
   \bibinfo{author}{Li, Z.Y.}, \bibinfo{author}{Lu, H.X.}, \bibinfo{author}{Li,
   W.J.}, \bibinfo{author}{Shen, X.H.}, \bibinfo{author}{Zeren, Z.},
   \bibinfo{author}{Tan, Q.}, \bibinfo{author}{Zhou, N.}, \bibinfo{year}{2023}.
-\newblock \bibinfo{title}{{{EMD}} based statistical analysis of nighttime
-  pre-earthquake {{ULF}} electric field disturbances observed by {{CSES}}}.
+\newblock \bibinfo{title}{Emd based statistical analysis of nighttime
+  pre-earthquake ulf electric field disturbances observed by cses}.
 \newblock \bibinfo{journal}{Frontiers in Astronomy and Space Sciences}
   \bibinfo{volume}{9}.
 \newblock \DOIprefix\doi{10.3389/fspas.2022.1077592}.
@@ -249,8 +309,8 @@
   H.}, \bibinfo{author}{Liu, J.}, \bibinfo{author}{Maimaitusun, N.},
   \bibinfo{author}{Yu, C.}, \bibinfo{author}{Zhang, X.}, \bibinfo{author}{Ma,
   Y.}, \bibinfo{year}{2022}.
-\newblock \bibinfo{title}{Preliminary {{Analysis}} of {{Ionospheric Anomalies}}
-  before {{Strong Earthquakes}} in and around {{Mainland China}}}.
+\newblock \bibinfo{title}{Preliminary analysis of ionospheric anomalies before
+  strong earthquakes in and around mainland china}.
 \newblock \bibinfo{journal}{Atmosphere} \bibinfo{volume}{13},
   \bibinfo{pages}{410}.
 \newblock \DOIprefix\doi{10.3390/atmos13030410}.
@@ -263,8 +323,8 @@
   \bibinfo{author}{Vargemezis, G.}, \bibinfo{author}{Menny, P.},
   \bibinfo{author}{Fauquet, F.}, \bibinfo{year}{2006}.
 \newblock \bibinfo{title}{Ground-based electromagnetic studies combined with
-  remote sensing based on {{Demeter}} mission: {{A}} way to monitor active
-  faults and volcanoes}.
+  remote sensing based on demeter mission: A way to monitor active faults and
+  volcanoes}.
 \newblock \bibinfo{journal}{Planetary and Space Science} \bibinfo{volume}{54},
   \bibinfo{pages}{541--557}.
 \newblock \DOIprefix\doi{10.1016/j.pss.2005.10.022}.

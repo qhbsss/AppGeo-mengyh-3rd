@@ -242,7 +242,9 @@ In the analysis of Swarm satellite data, \cite{desantisPotentialEarthquakePrecur
  \cite{fanAnalysisSwarmSatellite2022a} further developed a signal decomposition method for Swarm data analysis. Our research builds on these foundational studies.
 
 %{According to the existing research content, this study obtained the vector information of electromagnetic data through the Swarm satellite. First, the \hl{CIY4} model was used to eliminate the static field of the geomagnetic vector data, and then the VMD method based on PSO optimization was used to extract the two-modal data to eliminate interference from geomagnetic activities, and then use the unsupervised outlier detection (ECOD) of the empirical cumulative distribution function to cluster the data points and judge the cumulative anomalies within a certain time span.}
-{According to previous studies, this research utilizes vector information of electromagnetic data acquired by the Swarm satellite. The CIY4 model was first applied to eliminate the static field component from the geomagnetic vector data. Subsequently, a Variational Mode Decomposition (VMD) approach optimized by Particle Swarm Optimization (PSO) was used to extract two intrinsic mode functions, aiming to reduce interference caused by geomagnetic disturbances. Finally, an unsupervised anomaly detection method—Empirical Cumulative Distribution-based Outlier Detection (ECOD)—was employed to cluster data points and assess cumulative anomalies over a defined time span.}
+Recent studies have also expanded the potential of electromagnetic signals in earthquake forecasting. \cite{alimoradiSuccessfulTestsDetecting2024} leveraged Swarm satellite data to identify significant magnetic anomalies within a 10-day window prior to earthquakes, establishing a correlation between the duration of the anomaly and earthquake magnitude. This approach lays a strong foundation for future earthquake prediction systems. Similarly, \cite{desantisPrecursoryWorldwideSignatures2019} conducted global statistical analysis and explored anomalies in both magnetic fields and electron density, supporting the coupling of Earth’s ionosphere, atmosphere, and lithosphere (LAIC) as a phenomenon preceding large earthquakes. \cite{harriganDetectionElectromagneticSeismic2024} introduced an enhanced Martingale analysis method for detecting electromagnetic anomalies using Swarm data, offering a new tool for earthquake early warning systems. Furthermore, \cite{kuoImprovedCouplingModel} and \cite{pulinetsLithosphereAtmosphereIonosphere2011} proposed improved LAI coupling models and a unified theory for validating earthquake precursors, contributing to the theoretical grounding and predictive capacity of seismic forecasting.
+
+{According to previous studies, this research utilizes vector information of electromagnetic data acquired by the Swarm satellite. The CIY4 model was first applied to eliminate the static field component from the geomagnetic vector data. Subsequently, a Variational Mode Decomposition (VMD) approach optimized by Particle Swarm Optimization (PSO) was used to extract two intrinsic mode functions, aiming to reduce interference caused by geomagnetic disturbances. Finally, an unsupervised anomaly detection \hl{method-Empirical Cumulative Distribution-based Outlier Detection (ECOD)}—was employed to cluster data points and assess cumulative anomalies over a defined time span.}
 The study mainly contains the following contributions:
 \begin{enumerate}
 %	\item The study presents an innovative methodology for seismic anomaly detection. By leveraging a signal decomposition technique based on Variational Mode Decomposition (VMD) and specifically Particle Swarm Optimization-VMD (PSO-VMD), the authors successfully mitigate the interference of the electromagnetic dynamic field. This novel approach significantly enhances the analysis of seismic anomalies through geomagnetic data.
@@ -307,7 +309,7 @@ The Swarm satellite is equipped with multiple payloads to meet various observati
 %\fi
 \subsection{CIY4 model}
 
-{In order to remove the influence of the earth's main magnetic field, lithospheric magnetic field, external source field, geomagnetic activity, etc. from the electromagnetic information obtained by the swarm satellite, and extract the part of the electromagnetic signal directly affected by earthquakes, this study uses a joint model to remove the static field. For existing joint models, such as CM5, CIY4, CHAOS, etc., since CIY4 improves the possible magnetic anomaly areas in CM5 and enriches the ionospheric inversion data compared to CHAOS, this study uses the CIY4 model to analyze the static field to remove.}
+{In order to remove the influence of the Earth's main magnetic field, lithospheric magnetic field, external source field, geomagnetic activity, etc. from the electromagnetic information obtained by the swarm satellite, and extract the part of the electromagnetic signal directly affected by earthquakes, this study uses a joint model to remove the static field. For existing joint models, such as CM5, CIY4, CHAOS, etc., since CIY4 improves the possible magnetic anomaly areas in CM5 and enriches the ionospheric inversion data compared to CHAOS, this study uses the CIY4 model to analyze the static field to remove.}
 
 {The inversion process of CIY4 mainly includes the following steps: first, preprocessing the geomagnetic vector data, including removing the influence of satellite attitude; then transforming the processed data into the geomagnetic field in spherical coordinates; next, decomposing the geomagnetic field into different levels and types of spherical harmonic terms using the spherical harmonic expansion method; calculating the analytical solution of the spherical harmonic coefficients; smoothing and predicting the spherical harmonic coefficients; finally, evaluating and validating the inversion results. In this study, we validated the CIY4 model's inversion accuracy by comparing data from multiple Swarm satellites, ensuring robust results even with potential inconsistencies between different satellite data.}
 
@@ -376,7 +378,7 @@ Figures \ref{fig:cyi4}(a)-(d) illustrate the core field data, ionospheric field 
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=1\linewidth]{CYI4Eng.png}
-	\caption{Data of CIY4 model. {Each sub-figure represents the electromagnetic E component data and the electromagnetic E component residual graph, where (a) is the main magnetic field component data, (b) is the ionosphere magnetosphere component data, (c) is the lithosphere magnetic field component data, (d) is the magnetosphere magnetic field component data, (e) is the original observation data, and (f) is the residual of the observation data and the model inversion data.}}
+	\caption{Data of CIY4 model. {Each sub-figure represents the electromagnetic E component data and the electromagnetic E component residual graph, where (a) is the main magnetic field component data, (b) is the ionosphere \hl{magnetic field} component data, (c) is the lithosphere magnetic field component data, (d) is the magnetosphere magnetic field component data, (e) is the original observation data, and (f) is the residual of the observation data and the model inversion data.}}
 	\label{fig:cyi4}
 \end{figure}
 %\iffalse
@@ -525,7 +527,7 @@ The complete optimization procedure is summarized in Algorithm~\ref{al:PSO-based
 %
 %Overall, the PSO-based VMD algorithm provides an effective and automatic approach for decomposing signals into modal components and auxiliary signals. By adaptively determining the values of $K$  and {$\alpha$} , it ensures accurate and reliable signal decomposition, enabling the extraction of meaningful features and improving the analysis of the original signals.
 {The PSO-VMD approach offers several advantages: it automatically determines optimal parameters, reduces mode mixing, and suppresses periodic or spurious components in the signal. By decomposing the electromagnetic data into narrow-band intrinsic modes, it enhances background variation and facilitates anomaly detection.
-}
+} \hl{By applying this procedure to Swarm A satellite data from May 1 to May 2, 2020, we estimated the optimal parameters as follows: the number of modes $K=3$, and the penalty factor $\alpha=56763.6128$. These values were subsequently used in the signal decomposition process throughout the study.}
 
 {One notable advantage of the PSO-VMD preprocessing method is its inherent capability to suppress periodic or spurious components within the original signal. Through the adaptive decomposition of signals into narrow-band intrinsic modes, the method effectively isolates and attenuates high-amplitude periodic outliers, which often manifest as artifacts in electromagnetic recordings. While we do not explicitly present side-by-side visual comparisons in this paper, this property of PSO-VMD contributes to the clearer expression of background variations in the residual magnetic field, which is critical for subsequent anomaly detection.}
 \subsection{ECOD method}
@@ -558,7 +560,7 @@ In ECOD, there are three components involved in calculating the outlier scores: 
 	\end{split}
 \end{equation}
 
-{In the context of the Swarm dataset, after the signals are decomposed using PSO-VMD, the ECOD method is applied to detect anomalies within the decomposed modes. Each mode is evaluated using the ECDF approach, and outlier scores are computed based on the distribution of the data within that mode. The computed outlier scores allow us to identify data points that exhibit significant deviations from the expected behavior of the satellite signals. These anomalies are flagged for further analysis, aiding in the detection of unusual patterns or artifacts in the Swarm satellite data.}
+{In the context of the Swarm dataset, after the signals are decomposed using PSO-VMD, the ECOD method is applied to detect anomalies within the decomposed modes. Each mode is evaluated using the ECDF approach, and outlier scores are computed based on the distribution of the data within that mode. The computed outlier scores allow us to identify data points that exhibit significant deviations from the expected behavior of the satellite signals. These anomalies are flagged for further analysis, aiding in the detection of unusual patterns or artifacts in the Swarm satellite data.} \hl{Moreover, the anomaly scores are used to perform clustering on the orbital numbers, as the goal is to identify if certain orbital tracks exhibit consistent anomaly patterns over time.}
 
 In outlier detection, the larger the value of $O(\cdot)$, the farther the data point is from the collective characteristics of the entire dataset, indicating a higher likelihood of being an outlier. $O_{left\_only}(X_i)$ represents the distance of data point $X_i$  from the left-tail outliers, while $O_{right\_only}(X_i)$  represents the distance from the right-tail outliers. $O_{auto}(X_i)$ considers the skewness of each feature in $X_i$  to determine which direction of outliers to consider. 
 
@@ -571,9 +573,9 @@ Specifically, if the skewness of the  $j-th$ feature is less than 0, indicating 
 This outlier score $O_i$  helps identify the extent to which a data point deviates from the overall distribution of the dataset, thereby indicating its likelihood of being an outlier. {To determine whether a data point is an outlier, we rank all samples based on their outlier scores $O_i$ in descending order. Specifically, we consider a point to be anomalous if its outlier score lies within the top 1\% of the entire dataset. This percentile-based threshold allows us to adaptively identify the most significant deviations while avoiding arbitrary fixed thresholds, thereby enhancing the robustness of the detection process.}   
 \section{Results and Discussion}
 \subsection{Pre-earthquake Electromagnetic Data Anomaly Detection}
-{In order to verify the effectiveness of the anomaly detection method proposed in this study, this study selected an incident that occurred on September 15, 2016, 11 kilometers north-northeast of La Paz Centro urban area in Leon Province, Nicaragua (west longitude $86^\circ$, north latitude $12^\circ$) of a shallow earthquake of magnitude 5.7. After obtaining electromagnetic data from the swarm satellite in the time range from 6 months before the earthquake to 3 months after the earthquake, anomalies were detected within this interval. \hl{In our study, we selected a relatively long time window (approximately three months) to analyze anomaly patterns. This choice was based on empirical observations showing that pre-seismic anomalies tend to emerge gradually and are more reliably captured over extended periods.} After obtaining the electromagnetic data, effective earthquake-related signals are obtained by removing the static field and dynamic field of the earth. On this basis, the data is segmented. The segmentation is based on the orbit number (OrbitNumber) of the Swarm satellite. For the Swarm A satellite, it is in a near-polar orbit at an altitude of 462-524 kilometers and an orbital inclination of 87.4 degrees. In this orbit, the Swarm A satellite takes approximately 91 minutes to orbit the Earth. Therefore, the data time span of each piece of data is 91 minutes.}
+{In order to verify the effectiveness of the anomaly detection method proposed in this study, this study selected an incident that occurred on September 15, 2016, 11 kilometers north-northeast of La Paz Centro urban area in Leon Province, Nicaragua (west longitude $86^\circ$, north latitude $12^\circ$) of a shallow earthquake of magnitude 5.7. After obtaining electromagnetic data from the swarm satellite in the time range from 6 months before the earthquake to 3 months after the earthquake, anomalies were detected within this interval. \hl{In our study, we selected a relatively long time window (approximately three months) to analyze anomaly patterns. This choice was based on empirical observations showing that pre-seismic anomalies tend to emerge gradually and are more reliably captured over extended periods.} After obtaining the electromagnetic data, effective earthquake-related signals are obtained by removing the static field and dynamic field of the Earth. On this basis, the data is segmented. The segmentation is based on the orbit number (OrbitNumber) of the Swarm satellite. For the Swarm A satellite, it is in a near-polar orbit at an altitude of 462-524 kilometers and an orbital inclination of 87.4 degrees. In this orbit, the Swarm A satellite takes approximately 91 minutes to orbit the Earth. Therefore, the data time span of each piece of data is 91 minutes.}
 
-Figure \ref{fig:nicaragua} presents {the geographic distribution of earthquake epicenters} with a magnitude greater than 5.0 in the Nicaragua region from 2000 to the present (March 4, 2023). In the {Figure}, the size of the blue dots represents the magnitude intensity of each earthquake. Furthermore, the red {star} in the figure indicates the location of {the seismic event selected in this survey}.
+Figure \ref{fig:nicaragua} presents {the geographic distribution of earthquake epicenters} with a magnitude greater than 5.0 in the Nicaragua region from 2000 to the present (March 4, 2023). In the {Figure}, the size of the blue dots represents the magnitude intensity of each earthquake. Furthermore, the red {star} in the figure indicates the location of {\hl{earthquake} selected in this survey}. \hl{Among global M5+ earthquakes, we focused on the M5.7 Nicaragua earthquake on 15 September 2016 due to its occurrence in a geomagnetically quiet region, its moderate depth and location within the satellite track coverage, and the availability of high-quality data for anomaly analysis. This makes it a representative case to demonstrate the capability of the proposed method. For the case study of the M5.7 earthquake on September 15, 2016, Swarm A satellite data within the spatial window of $81.5^\circ$W to $90^\circ$W longitude and $10^\circ$N to $16^\circ$N latitude were analyzed. The time period considered spans from six months before to three months after the earthquake. This selection allows for the assessment of whether anomalies appear prior to the earthquake and whether a weakening trend is observed following the event.}
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.8\linewidth]{Nicaragua_1990-01-01-2024-01-01}
@@ -581,15 +583,15 @@ Figure \ref{fig:nicaragua} presents {the geographic distribution of earthquake e
 	\label{fig:nicaragua}
 \end{figure}
 
-As shown in Figure \ref{fig:pre-earthquake-anomaly-detection-Nicaragua}, Figure \ref{fig:raw-data-anomaly-detection-Nicaragua} displays the cumulative results obtained by applying the ECOD method directly to {the original data} without utilizing the PSO-VMD method for preprocessing. On the other hand, Figure \ref{fig:PSO-VMD-anomaly-detection-Nicaragua} represents the cumulative results obtained after applying the PSO-VMD method for preprocessing. Since the trend of the {sigmoid function}\citep{oksumNovelApproachBased2021} is gradual-steep-gradual, fitting the cumulative results with the sigmoid function allows for a better representation of the pre-earthquake anomaly trend. Consequently, the fitted Sigmoid function is utilized to discern the trend of the critical anomaly.
+As shown in Figure \ref{fig:pre-earthquake-anomaly-detection-Nicaragua}, Figure \ref{fig:raw-data-anomaly-detection-Nicaragua} displays the cumulative results obtained by applying the ECOD method directly to {the original data} without utilizing the PSO-VMD method for preprocessing. On the other hand, Figure \ref{fig:PSO-VMD-anomaly-detection-Nicaragua} represents the cumulative results obtained after applying the PSO-VMD method for preprocessing. Since the trend of the {sigmoid function}\citep{oksumNovelApproachBased2021} is gradual-steep-gradual, fitting the cumulative results with the sigmoid function allows for a better representation of the pre-earthquake anomaly trend. Consequently, the fitted Sigmoid function is utilized to discern the trend of the critical anomaly. \hl{This difference highlights the effectiveness of PSO-VMD. Without preprocessing, the anomalies appear scattered and unclear. After PSO-VMD, the anomaly accumulation becomes more concentrated around the earthquake, making the anomaly trend easier to identify and fit with the sigmoid function.}
 \begin{figure}[htbp]
 	\centering
 	\subfloat[Anomaly detection based on raw data]{
 		\label{fig:raw-data-anomaly-detection-Nicaragua}
-		\includegraphics[width=.45\linewidth]{Nicaragua_rawEng.png}}
+		\includegraphics[width=.5\linewidth]{Nicaragua_rawEng.png}}
 	\subfloat[Anomaly detection based on PSO-VMD]{
 		\label{fig:PSO-VMD-anomaly-detection-Nicaragua}
-		\includegraphics[width=.45\linewidth]{Nicaragua_VMDEng.png}}
+		\includegraphics[width=.5\linewidth]{Nicaragua_VMDEng.png}}
 	\caption{{Pre-earthquake anomaly detection comparision of Nicaragua between raw data and preprocessed data with PSO-VMD.}}
 	\label{fig:pre-earthquake-anomaly-detection-Nicaragua}
 \end{figure}
@@ -612,7 +614,7 @@ To provide an initial assessment of the fitting results, this study utilizes the
 \subsection{Global Random Seismic Anomaly Analysis}
 {In order to further study the generalization ability of this method, we randomly selected multiple earthquake events and non-earthquake events and applied this method to perform pre-earthquake anomaly detection.} {Within the year 2016, a random selection of events was made.} The time range for the selected events was 180 days before and 90 days after the given earthquake occurrences. Among the selected events, there were a total of 6 earthquake events and 14 non-earthquake events (no earthquakes greater than magnitude 5 occurred within the given grid). The detailed information of the earthquake and non-earthquake events is presented in Tables \ref{tab:random earthquake event} and Tables \ref{tab:random non earthquake event}, respectively.
 \begin{table}[htbp]
-	\caption{random earthquake event}
+	\caption{\hl{Random Earthquake Event}}
 	\label{tab:random earthquake event}
 	\centering
 	\begin{tabular}{clccc}
@@ -629,7 +631,7 @@ To provide an initial assessment of the fitting results, this study utilizes the
 	\end{tabular}
 \end{table}
 \begin{table}[htbp]
-	\caption{random non earthquake event}
+	\caption{\hl{Random Non Earthquake Event}}
 	\label{tab:random non earthquake event}
 	\centering
 	\begin{tabular}{clcc|clcc}
@@ -648,13 +650,13 @@ To provide an initial assessment of the fitting results, this study utilizes the
 The earthquake events and non-earthquake events have undergone data preprocessing, signal classification, and anomaly detection, and the results have been fitted. Figure \ref{fig:random earthquake event analysis} shows the final results. The time scale for all events is constrained between -180 days and 90 days. In the figure, the gray line represents the occurrence of earthquake events.
 \begin{figure}[htbp]
 	\centering
-	\subfloat[Earthquake event]{
+	\subfloat[Earthquake Event]{
 		\label{fig:earthquake event anomaly detection}
 		\includegraphics[width=0.8\linewidth]{TRUE_FITEng}} \\
-	\subfloat[Non-seismic events (part 1)]{
+	\subfloat[Non-seismic Events (part 1)]{
 		\label{fig:non-seismic events (part 1)}
 		\includegraphics[width=0.49\linewidth]{FALSE_FIT1Eng}}
-	\subfloat[Non-seismic events (part 2)]{
+	\subfloat[Non-seismic Events (part 2)]{
 		\label{fig:non-seismic events (part 2)}
 		\includegraphics[width=0.49\linewidth]{FALSE_FIT2Eng}}
 	\caption{Random earthquake event analysis {(a) is the anomaly detection result for earthquake events, (b) and (c) are the anomaly detection results for non-earthquake events.}}
@@ -673,7 +675,7 @@ According to Table 4 and Table 5, $x_0$  represents the number of days relative 
 
 {To further validate these observations, we performed independent two-sample t-tests to assess whether the differences in anomaly detection indicators between earthquake and non-earthquake events are statistically significant. The results show that the difference in $dx$ is statistically significant (p = 0.0027), suggesting a distinct pattern of anomaly accumulation in earthquake events. The difference in $R_{ratio}$ is marginally significant (p = 0.0504), indicating a potential difference in the fitting trend between the two groups. However, the difference in $x_0$ is not statistically significant (p = 0.2503), which may be due to the large variability in anomaly timing among non-earthquake events.}
 
-{However, for the anomaly detection result indicators} in the non-earthquake time period in Table \ref{tab:Non Earthquake Event Anomaly Detection Result Metrics}, almost all values are unreasonable. For example, events A, E, H, I, J, and L are closer to the fitting result of random events. For events B, G, K, and N, the inflection points are too far from the events, making them meaningless in practical terms. Although the data point M may seem reasonable, it is actually due to a small value of $\vert A_1 - A_2 \vert$ , which is 7. This means that although there is some level of anomaly, the perturbation is small and can be ignored.
+{However, for the anomaly detection result indicators} in the non-earthquake time period in Table \ref{tab:Non Earthquake Event Anomaly Detection Result Metrics}, almost all values are unreasonable. For example, events A, E, H, I, J, and L are closer to the fitting result of random events. For events B, G, K, and N, the inflection points are too far from the events, making them meaningless in practical terms. Although the data point M may seem reasonable, it is actually due to a small value of $\vert A_1 - A_2 \vert$ , which is 7. This means that although there is some level of anomaly, the perturbation is small and can be ignored. As shown in Table \ref{tab:Non Earthquake Event Anomaly Detection Result Metrics}, \hl{the estimated $x_0$ values are close to the actual earthquake dates for true events, while for non-earthquake events, the estimated anomaly centers deviate significantly, often with large absolute values. This behavior is expected, as there is no true seismic activity in these cases, and it demonstrates the model’s ability to differentiate genuine anomalies from background fluctuations.}
 \begin{table}[htbp]
 	\caption{Earthquake Event Anomaly Detection Result Metrics}
 	\label{tab:Earthquake Event Anomaly Detection Result Metrics}
@@ -718,7 +720,7 @@ By utilizing the three parameters, $R_{ratio}$ , $x_0$ and $dx$ , along with the
 	\begin{tabular}{@{}llll@{}}
 		\toprule
 		& \textbf{$R_{ratio}$} & \textbf{$x_0$} & \textbf{$dx$ ($10^5$)} \\ \midrule
-		Proposed Method    & 3.46                 & -30.58         & 18.25                  \\
+		\hl{PSO-VMD+ECOD}    & 3.46                 & -30.58         & 18.25                  \\
 		CEEMDAN\citep{ChenDynamicmonitoringoffshore2021} &  6.78                   & -20.73               &   378.73        \\		
 		EEMD\citep{BarmanDetectionearthquakeinduced2016}    & 3.72                 & 140.20         & 3280.62                \\ 
 		EMD\citep{yangEMDBasedStatistical2023}     & 6.90                 & 69.48          & 416.32                 \\
@@ -742,6 +744,6 @@ This research was financially supported by the Jiangsu Provincial Key R$\&$D Pro
 During the preparation of this work the author used ChatGPT in order to improve language and readability. After using this tool, the author reviewed and edited the content as needed and takes full responsibility for the content of the publication.
 \bibliographystyle{unmarkmodel2-names}
 %\bibliographystyle{apalike}
-\bibliography{UnmarkAnomaly_Detection}
+\bibliography{New_Unmark_Anomaly_Detection}
 
 \end{document}
